@@ -1,0 +1,12 @@
+- Kafka setup
+    - Run below command in terminal to find IP address and configure ip address in `.env` file
+        - command: `ifconfig | grep "inet"` 
+    - Set volume path from local system path
+    - run command to start container 
+        - command: `docker compose -f ./docker-compose.kafka.yaml up -d`
+
+- Postgres setup
+    - set password for `POSTGRES_PASSWORD` environment variable in `docker-compose.postgres.yaml` file
+    - set volume path from local system path
+    -
+        - command: `docker compose -f ./docker-compose.postgres.yaml up -d`
