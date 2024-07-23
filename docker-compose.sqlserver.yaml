@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  sqlserver:
+    container_name : sqlserver
+    platform: linux/arm64
+    image: mcr.microsoft.com/mssql/server
+    restart: always
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Secret@1234
+   
+
+      
